@@ -1,0 +1,6 @@
+[submodule "stroyno_inscriptions"]
+	path = stroyno_inscriptions
+	url = https://github.com/petrifiedvoices/stroyno_inscriptions
+[submodule "EFES"]
+	path = EFES
+	url = https://github.com/EpiDoc/EFES
