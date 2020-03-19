@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en" xml:base="ex-epidoctemplate.xml">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                     <title>Military Diploma</title>
+                </titleStmt>
+                <publicationStmt>
+                    <authority>Epigraphische Datenbank Heidelberg</authority>
+                <idno type="URI">http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD064478
+            </idno>
+            <idno type="TM">197833</idno>
+            <idno type="localID">HD064478</idno>
+            <idno type="localID">Boyanov 2007, no. 1</idno>
+            <availability>
+            <p>© Heidelberg Academy of Sciences and Humanities</p>
+            <licence target="http://creativecommons.org/licenses/by-sa/4.0/">This file is licensed under the Creative Commons Attribution-ShareAlike 4.0 license.
+            </licence>
+            </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <repository >Regional Historical Museum, Yambol, Bulgaria</repository>
+                    <collection/>
+                    <idno>4748</idno>
+                </msIdentifier>
+        <physDesc>
+            <objectDesc>
+                <supportDesc>
+                    <support>
+                        <material ref="http://www.eagle-network.eu/voc/material/lod/109">Bronze</material> 
+                            <objectType ref="http://www.eagle-network.eu/voc/objtyp/lod/257">Table</objectType>
+                                <dimensions unit="metre">
+                                    <height unit="metre">0.04</height>
+                                    <width unit="metre">0.04</width>
+                                    <depth unit="metre">0.001</depth>
+                                </dimensions> (m).
+                                Decoration <rs type="decoration" ref="http://www.eagle-network.eu/voc/decor/lod/1000">not present</rs>.
+                     </support>
+            </supportDesc>
+            <layoutDesc>
+                <layout>
+                    <rs type="execution" ref="http://www.eagle-network.eu/voc/writing/lod/3">engraved</rs> <p>. The text on the inner side rotated by 90 degrees left.</p>
+                </layout>
+            </layoutDesc>
+        </objectDesc>
+        <handDesc>
+        <handNote>
+        <dimensions>
+            <width unit="metre"></width>
+            <height unit="metre">0.004</height>
+        </dimensions>
+        </handNote>
+        </handDesc>
+    </physDesc>
+    <history>
+    <origin>
+        <origPlace>
+            <placeName type="provinceItalicRegion" ref="http://www.trismegistos.org/place/000014">Thracia</placeName>
+         </origPlace>
+        <origDate datingMethod="http://en.wikipedia.org/wiki/Julian_calendar" evidence="conjecture" notBefore="0152" notAfter="0158">AD 152 - AD 158</origDate>
+    </origin>
+    <provenance type="found">
+        <placeName/>
+        <placeName ref="42.286500, 26.695216">Yurta-Stroyno</placeName>,
+        <placeName ref="http://www.geonames.org/726707">Stroyno</placeName>,
+        <placeName type="modern_region" ref="http://www.geonames.org/864563/oblast-yambol">Yambol</placeName>,
+        <placeName type="modernCountry" ref="http://www.geonames.org/countries/bg/">Bulgaria</placeName>
+    </provenance>
+    </history>
+    </msDesc>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+    <p>Marked-up according to the EpiDoc Guidelines</p>
+        <classDecl>
+        <taxonomy>
+        <category xml:id="representation">
+            <catDesc>Digitized other representations</catDesc>
+        </category>
+        </taxonomy>
+    </classDecl>
+</encodingDesc>
+<profileDesc>
+    <textClass>
+        <keywords>
+            <term ref="http://www.eagle-network.eu/voc/typeins/lod/91">Military diploma</term>
+        </keywords>
+    </textClass>
+<langUsage>
+    <language ident="lat">Latin</language>
+    <language ident="en">English</language>
+    <language ident="fr">French</language>
+    <language ident="de">German</language>
+    <language ident="grc">Ancient Greek</language>
+</langUsage>
+<creation> EAGLE - Europeana Network of Ancient Greek and Latin Epigraphy
+</creation>
+</profileDesc>
+<revisionDesc>
+    <change when="2011-08-24" who="Gräf"> provisorisch bearbeitet </change>
+    <change when="2020-03-16" who="Hermankova"> revision</change>
+</revisionDesc>
+</teiHeader>
+    
+<facsimile>
+        <surface >
+            <desc>Outer side of the military diploma, Boyanov 2007, Fig. 1</desc>
+            <graphic url="https://github.com/petrifiedvoices/stroyno_inscriptions/blob/master/Photos/Boyanov2007_1.png">
+            <desc>Photograph, I. Boyanov (2007)</desc>
+            </graphic>
+            <desc>Inner side of the military diploma, Boyanov 2007, Fig. 2</desc>
+            <graphic url="https://github.com/petrifiedvoices/stroyno_inscriptions/blob/master/Photos/Boyanov2007_2.png">
+            <desc>Photograph, I. Boyanov (2007)</desc>
+            </graphic>
+        </surface>
+     </facsimile>    
+
+<text>
+    <body>
+        <!--
+
+                - - - - - -] / [- - - in classe praetoria] Misenen/[si quae est sub - - - praef(ecto)] XXVI sti/[pendi(i)s emeritis dimissis honesta mis]sione / [quorum nomina subscript(a) sunt ipsis] fili(i)sq(ue) / [eorum quos susceperint ex mulierib]us qua/[s & // - - - - - -] / [- - -]R(?)E(?)L(?)I[-]N[- - -] / [- - - Co]nstanti [- - -] / [- - - descri]pt(um) et recogn[it(um) - - -] / [- - - fi]xa est Rom[ae - - -] / [- - - d]ivi Aug(usti) [ad Minervam]
+            
+-->
+        <div type="edition" xml:lang="lat">
+            <head>Text</head>
+          <div n="1" type="textpart">
+            <ab>
+            <lb n="0"/>
+                <gap reason="lost" extent="unknown" unit="line"/>
+                <lb n="1"/>
+                <gap reason="lost" extent="unknown" unit="character"/>
+                <supplied reason="lost">
+                                        in classe praetoria
+                </supplied>
+                Misenen
+                <lb break="no" n="2"/>
+                <supplied reason="lost">
+                    si quae est sub </supplied>
+                <gap reason="lost" extent="unknown" unit="character"/>
+                <supplied reason="lost">
+                    <expan>
+                        <abbr>praef
+                        </abbr>
+                        <ex>ecto</ex>                 
+                    </expan>
+                </supplied>
+                XXVI sti
+                <lb break="no" n="3"/>
+                <supplied reason="lost">
+                    <expan>
+                        <abbr>pendi</abbr>
+                        <ex>i</ex>
+                        s
+                    </expan>
+                    emeritis dimissis honesta mis
+                </supplied>
+                sione
+                <lb n="4"/>
+                <supplied reason="lost">
+                    quorum nomina
+                    <expan>
+                        <abbr>subscript</abbr>
+                        <ex>a</ex>
+                    </expan>
+                    sunt ipsis
+                </supplied>
+                fili
+                <expan>
+                    <ex>i</ex>
+                    <abbr>sq</abbr>
+                    <ex>ue</ex>
+                </expan>
+                <lb n="5"/>
+                <supplied reason="lost">eorum quos susceperint ex mulierib</supplied>
+                us qua
+                <lb break="no" n="6"/>
+                <supplied reason="lost">s</supplied>
+                <lb n="0"/>
+                <gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
+          </div>
+            <div n="2" type="textpart">
+                <ab>
+                    <lb n="0"/>
+                    <gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <expan>
+                        <abbr>R</abbr>
+                        <ex cert="low"/>
+                        E
+                    </expan>
+                    <certainty match="preceding-sibling::node()" locus="value"/>
+                    <expan>
+                        <abbr>L</abbr>
+                        <ex cert="low"/>
+                        I
+                    </expan>
+                                        <supplied reason="lost">
+                    </supplied>
+                    <gap reason="lost" quantity="1" unit="character"/>
+                    N
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost">Co</supplied>
+                    nstanti
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <expan>
+                        <abbr>
+                            <supplied reason="lost">descri</supplied>
+                            pt
+                        </abbr>
+                        <ex>um</ex>
+                    </expan>
+                    et recogn
+                    <supplied reason="lost">
+                        <expan>
+                            <abbr>it</abbr>
+                            <ex>um</ex>
+                        </expan>
+                    </supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost">fi</supplied>
+                    xa est Rom
+                    <supplied reason="lost">ae</supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost">d</supplied>
+                    ivi
+                    <expan>
+                        <abbr>Aug</abbr>
+                        <ex>usti</ex>
+                    </expan>
+                    <supplied reason="lost">ad Minervam</supplied>
+                </ab>
+            </div>
+        </div>
+        <div type="apparatus">
+            <p/>
+        </div>
+        <div type="commentary">
+            <p> Fragment of military diploma issued on behalf of an inhabitant of Thrace, likely of Thracian origin, who served before the mid-2nd century AD in the Roman Navy (the imperial fleet Classis Praetoria Misenensis at Misenum in modern Italy).</p>
+        </div>
+        <div type="bibliography">
+            <listBibl>
+                <bibl> AE 2007, 1259. </bibl>
+                <bibl> Boyanov, I. 2007, Archeologia Bulgarica 11 (3), 69-74, fig. 1 + 2. </bibl>
+                <bibl> Hermankova 2020. </bibl>
+            </listBibl>
+        </div>
+    </body>
+</text>
+</TEI>

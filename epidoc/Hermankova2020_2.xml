@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Stone plate fragment to/by the Avilius family member</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Petra Hermankova</authority>
+                <idno type="filename">Hermankova 2020, 2</idno>
+                <date from="2020-03-16"/>
+                <availability> 
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">This file is licensed under the Creative Commons Attribution-ShareAlike 4.0 license.
+                    </licence>
+                </availability> 
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>Regional Historical Museum, Yambol, Bulgaria.</repository>
+                        <idno/>
+                    </msIdentifier>           
+                    <physDesc>
+                        <objectDesc>
+                              <supportDesc>
+                                <support>
+                                    <p>The <material ref="https://www.eagle-network.eu/voc/material/lod/2">stone</material> <objectType ref="https://www.eagle-network.eu/voc/objtyp/lod/260">plate</objectType> preserved from 30 % with dimensions (m) <dimensions unit="metre">
+                                         <width unit="metre">0.12</width> <height unit="metre">0.10</height> <depth unit="metre">0.04</depth>
+                                    </dimensions>. The shallow relief originally represented either a Horse Rider scene facing right or a standing barefoot person.
+                                        Relief depicting: 
+                                        <rs type="decoration" ref="https://www.eagle-network.eu/voc/decor/lod/686">Human figure</rs>
+                                      </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>Text located under the relief, the beginning of the text is missing.</layout> 
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>Carefully <rs type="execution" ref="https://www.eagle-network.eu/voc/writing/lod/1.html">carved with chisel</rs> letters with serifs. Letter Λ dimensions (m)<dimensions unit="metre"> <height unit="metre">0.012</height> <width unit="metre">0.018</width></dimensions>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Unknown place in
+                            <placeName type="provinceItalicRegion" ref="http://www.trismegistos.org/place/000014">Thracia</placeName>.
+                            </origPlace>
+                            <origDate evidence="conjecture" notBefore="0050" notAfter="0399">AD 50 - AD 399 </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <placeName ref="42.286500, 26.695216">Yurta-Stroyno</placeName>,
+                            <placeName ref="http://www.geonames.org/726707">Stroyno</placeName>,
+                             <placeName type="modern_region" ref="http://www.geonames.org/864563/oblast-yambol">Yambol</placeName>,
+                            <placeName type="modernCountry" ref="http://www.geonames.org/countries/bg/">Bulgaria</placeName>.
+                                 Found during archaeological investigation of the site Yurta-Stroyno in 2007. Bakardzhiev 2008, 471-2.
+                        </provenance> 
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Marked-up according to the EpiDoc Guidelines</p>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="representation">
+                        <catDesc>Digitized other representations</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation> Stroyno Archaeological Project, P. Hermankova, 2019. 
+            </creation>
+            <textClass>
+                 <keywords>
+                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/83">votive inscription</term>
+                     <term ref="http://www.eagle-network.eu/voc/typeins/lod/92">funerary isncription</term>
+        </keywords>
+    </textClass>
+<langUsage>
+    <language ident="lat">Latin</language>
+    <language ident="grc">Ancient Greek</language>
+    <language ident="en">English</language>
+</langUsage>
+</profileDesc>
+        <revisionDesc>
+            <change when="2020-03-16" who="Hermankova"> First edition.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+     <facsimile>
+        <surface>
+            <desc>Lower part of the plate. Traces of the lower part of the scene with a two human legs facing right are still visible, inscription located below the relief.</desc>
+            <graphic url="https://github.com/petrifiedvoices/stroyno_inscriptions/blob/master/Photos/Hermankova2020_2_Bakaradzhiev2008.JPG">
+            <desc>Photograph, Petra Tušlová (2018)</desc>
+            </graphic>
+        </surface>
+     </facsimile>
+    
+<text>
+        <body>
+            <div type="edition" xml:lang="grc">
+                <ab>
+                    <lb n="1"/><persName type="gentilicium" cert="high"><name>Αβιλλιου</name></persName>
+                   </ab>
+            </div>
+                <div type="apparatus"> 
+                <app loc="1">
+                <note>Double lambda instead of a single one.</note>
+            </app>
+            </div>
+            <div type="commentary">
+                <p>The text in the genitive singular reads ‘ΑΒΙΛΛΙΟΥ’, associating the dedicand or the deceased from the monument with the Roman family name Avilius.  Related family name is recorded in the military camp at Kabyle, ca. 40 km north, see IG Bulg 3.2 1777</p>
+            </div>
+            <div type="bibliography">
+                <bibl>
+                    <ptr target="Hermankova2020"/>
+                </bibl>
+                 <bibl>
+                    <ptr target="Bakardzhiev2008"/>
+                </bibl>
+            </div>
+        </body>
+    </text>
+ </TEI>
+
+
