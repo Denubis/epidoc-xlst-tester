@@ -2,24 +2,43 @@
 <xsl:stylesheet 
   version="2.0" 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  xmlns:tei="http://www.tei-c.org/ns/1.0" 
+  xmlns:t="http://www.tei-c.org/ns/1.0" 
   xmlns="http://www.tei-c.org/ns/1.0"
   xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-<xsl:template match="/">
+  <xsl:output method="xml" indent="yes" encoding="UTF-8" doctype-system="about:legacy-compat"/>
+  
 
 
-<html> 
-<body>
-  <h2>Stuff</h2>
-  <xsl:for-each select="tei:TEI">
-    <xsl:for-each select="tei:teiHeader">
-      <xsl:for-each select="tei:fileDesc">
-        "<xsl:value-of select="tei:titleStmt/tei:title"/>"
-      </xsl:for-each>
-    </xsl:for-each>
-  </xsl:for-each>
-</body>
-</html>
-</xsl:template>
+
+  <xsl:template match="/">
+    <html> 
+      <head>
+        <xsl:for-each select="t:TEI">
+          <xsl:for-each select="t:teiHeader">
+            <xsl:for-each select="t:fileDesc">
+              <h1><xsl:value-of select="t:titleStmt/t:title"/></h1>
+              <xsl:for-each select="t:publicationStmt">
+              ID: <xsl:value-of select="t:idno"/><br/>
+              Author: <xsl:value-of select="t:authority"/><br/>
+              License: <xsl:value-of select="t:availability/t:license"/> <b>Does not work!</b>
+              <br/>
+              <br/>
+            </xsl:for-each>
+          </xsl:for-each>
+        </xsl:for-each>
+        </xsl:for-each>
+      </head>
+
+
+      <body>
+        <xsl:apply-templates/>
+      </body>
+    </html>
+
+
+
+ </xsl:template>
+
+
 </xsl:stylesheet>
 
